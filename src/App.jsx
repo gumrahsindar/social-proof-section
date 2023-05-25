@@ -8,7 +8,7 @@ function App() {
         className='mx-6 flex flex-col items-center justify-center text-center md:flex-row'
       >
         {/* Introducing */}
-        <div className=''>
+        <div className='mb-10'>
           <h1 className='mb-5 text-[40px] font-bold leading-8 tracking-tight text-veryDarkMagneta'>
             10,000+ of our users love our products.
           </h1>
@@ -18,8 +18,11 @@ function App() {
             services.
           </p>
         </div>
-        {/* Reviews */}
-        <div className=''></div>
+        {/* Rates */}
+        <div className=''>
+          {/* Rate-1 */}
+          <div></div>
+        </div>
       </section>
       <section id='card'></section>
     </div>
