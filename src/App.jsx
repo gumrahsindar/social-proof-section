@@ -1,9 +1,10 @@
 import './App.css'
 import starIcon from '../public/images/icon-star.svg'
+import StarRating from './components/StarRating'
 
 function App() {
   return (
-    <div className='container mx-auto mb-24 mt-20 max-w-7xl md:mt-28'>
+    <div className='container mx-auto mb-24 mt-20 max-w-7xl md:mt-28 md:-translate-x-10'>
       <section
         id='header'
         className='mx-6 flex flex-col items-center justify-center gap-10 text-center md:mx-40 md:flex-row md:items-start md:gap-32 md:text-left'
@@ -20,43 +21,24 @@ function App() {
           </p>
         </div>
         {/* Rates */}
-        <ul className=' mb-12 mt-8 w-full flex-col'>
-          <li className='mb-4 flex w-full flex-col items-center space-y-4 rounded-md bg-lightGrayishMagneta px-16 py-4  md:flex-row md:gap-x-8 md:space-y-0 md:px-8'>
-            <div className='flex gap-3 md:gap-2'>
-              <img src={starIcon} alt='star icon' />
-              <img src={starIcon} alt='star icon' />
-              <img src={starIcon} alt='star icon' />
-              <img src={starIcon} alt='star icon' />
-              <img src={starIcon} alt='star icon' />
-            </div>
-            <p className='whitespace-nowrap text-[17px] font-bold text-veryDarkMagneta'>
-              Rated 5 stars in Reviews
-            </p>
-          </li>
-          <li className='mb-4 flex w-full flex-col items-center  space-y-4 rounded-md bg-lightGrayishMagneta px-16 py-4  md:translate-x-[10%] md:flex-row md:space-x-28 md:space-y-0 md:px-8'>
-            <div className='flex gap-3 md:gap-2'>
-              <img src={starIcon} alt='star icon' />
-              <img src={starIcon} alt='star icon' />
-              <img src={starIcon} alt='star icon' />
-              <img src={starIcon} alt='star icon' />
-              <img src={starIcon} alt='star icon' />
-            </div>
-            <p className='whitespace-nowrap text-[17px] font-bold text-veryDarkMagneta'>
-              Rated 5 stars in Report Guru
-            </p>
-          </li>
-          <li className='mb-4 flex w-full flex-col items-center space-y-4 rounded-md bg-lightGrayishMagneta px-16 py-4  md:translate-x-[20%] md:flex-row md:gap-x-8 md:space-y-0 md:px-8'>
-            <div className='flex gap-3 md:gap-2'>
-              <img src={starIcon} alt='star icon' />
-              <img src={starIcon} alt='star icon' />
-              <img src={starIcon} alt='star icon' />
-              <img src={starIcon} alt='star icon' />
-              <img src={starIcon} alt='star icon' />
-            </div>
-            <p className='whitespace-nowrap text-[17px] font-bold text-veryDarkMagneta'>
-              Rated 5 stars in BestTech
-            </p>
-          </li>
+
+        <ul className='mb-12 mt-8 w-full flex-col'>
+          <StarRating
+            starIcon={starIcon}
+            reviewText='Reviews'
+            translateX='md:translate-x-0'
+          />
+          <StarRating
+            starIcon={starIcon}
+            reviewText='Report Guru'
+            translateX=' md:translate-x-[10%]'
+            spaceX='md:space-x-24'
+          />
+          <StarRating
+            starIcon={starIcon}
+            reviewText='BestTech'
+            translateX=' md:translate-x-[20%]'
+          />
         </ul>
       </section>
       <section id='card'></section>
