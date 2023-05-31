@@ -6,13 +6,13 @@ import UserData from '../data/UserData'
 
 function App() {
   return (
-    <div className='container mx-auto mb-24 mt-20 max-w-[1440px] md:mt-28 md:-translate-x-16'>
+    <div className='container mx-auto mb-24 mt-20 max-w-[1440px] md:mt-28 md:-translate-x-16 '>
       <section
         id='header'
-        className='mx-6 mb-12 flex  flex-col items-center justify-center gap-10 text-center md:mx-40 md:mb-[4.5rem] md:flex-row md:items-start md:gap-32 md:text-left'
+        className='mx-6 mb-12 flex flex-col items-center justify-center gap-10 text-center md:mx-40 md:flex-row md:items-start md:gap-32 md:text-left'
       >
         {/* Introducing */}
-        <div>
+        <div className='mt-6 flex max-w-md flex-col '>
           <h1 className='mb-5 text-[40px] font-bold leading-8 tracking-tight text-veryDarkMagneta md:text-[56px] md:leading-[48px]'>
             10,000+ of our users love our products.
           </h1>
