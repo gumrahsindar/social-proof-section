@@ -12,7 +12,7 @@ const UserData = [
     src: './images/image-irene.jpg',
     status: 'Verified Buyer',
     text: '“ Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery.”',
-    transform: 'translateY(10%)',
+    transform: 'translateY(5%)',
   },
   {
     id: 3,
@@ -20,7 +20,7 @@ const UserData = [
     src: './images/image-anne.jpg',
     status: 'Verified Buyer',
     text: '“ Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone! ”',
-    transform: 'translateY(20%)',
+    transform: 'translateY(10%)',
   },
 ]
 
