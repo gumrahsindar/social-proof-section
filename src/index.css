@@ -6,8 +6,8 @@
 
 body {
   font-family: 'League Spartan', sans-serif;
-  background-image: url('public/images/bg-pattern-top-mobile.svg'),
-    url('public/images/bg-pattern-bottom-mobile.svg');
+  background-image: url('../src/assets/images/bg-pattern-top-mobile.svg'),
+    url('../src/assets/images/bg-pattern-bottom-mobile.svg');
   background-position: top left, bottom right;
   background-repeat: no-repeat;
   background-size: contain, 100%;
@@ -15,10 +15,9 @@ body {
 
 @media (min-width: 768px) {
   body {
-    background-image: url('public/images/bg-pattern-top-desktop.svg'),
-      url('public/images/bg-pattern-bottom-desktop.svg');
+    background-image: url('../src/assets/images/bg-pattern-top-desktop.svg'),
+      url('../src/assets/images/bg-pattern-bottom-desktop.svg');
 
     background-size: auto, auto;
-    overflow: hidden;
   }
 }
