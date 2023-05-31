@@ -1,5 +1,5 @@
 import './App.css'
-import starIcon from '../src/assets/images/icon-star.svg'
+import starIcon from '/images/icon-star.svg'
 import StarRating from './components/StarRating'
 import Reviews from './components/Reviews'
 import UserData from '../data/UserData'
