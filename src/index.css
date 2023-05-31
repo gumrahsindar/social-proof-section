@@ -19,5 +19,7 @@ body {
       url('/images/bg-pattern-bottom-desktop.svg');
 
     background-size: auto, auto;
+    height: 100vh;
+    overflow: hidden;
   }
 }
