@@ -1,7 +1,7 @@
-const StarRating = ({ starIcon, reviewText, translateX, spaceX }) => {
+const StarRating = ({ starIcon, reviewText, translateX }) => {
   return (
     <li
-      className={`mb-4 flex w-full flex-col items-center space-y-4 rounded-md bg-lightGrayishMagneta px-16 py-4  md:flex-row md:gap-x-8 md:space-y-0 md:px-8 ${translateX} ${spaceX}`}
+      className={`mb-4 flex w-full flex-col items-center justify-start space-y-4 rounded-md bg-lightGrayishMagneta px-16 py-4 md:flex-row md:gap-24 md:space-y-0 md:px-8 ${translateX} $`}
     >
       <div className='flex gap-3 md:gap-2'>
         <img src={starIcon} alt='star icon' />
